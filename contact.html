@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>お問い合わせ</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/css/contact.css" />
+    </head>
+    <body>
+        <h3 class="page-title">お問い合わせフォーム</h3>
+        <div>
+            <div class="content">お問い合わせ内容の入力</div>
+            <div class="content">入力内容の確認</div>
+            <div class="content">送信完了</div>
+        </div>
+
+        <form action="check.html">
+            <h3 class="page-subtitle">お客様の情報を入力してください</h3>
+            <table>
+                <tr>
+                    <td class="bg-lightblue">お名前 <span class="required-item">必須</span> </td>
+                    <td><input type="text" name="name" /></td>
+                </tr>
+                <tr>
+                    <td class="bg-lightblue">電話番号</td>
+                    <td><input type="text" name="phone" /></td>
+                </tr>
+                <tr>
+                    <td class="bg-lightblue">メールアドレス 必須</td>
+                    <td>
+                        <div><input type="text" name="email" /></div>
+                        <div>確認のためもう一度入力してください</div>
+                        <div><input type="text" name="email-confirm" /></div>
+                    </td>
+                </tr>
+            </table>
+
+            <h3>お問い合せ内容を入力してください</h3>
+            <table>
+                <tr>
+                    <td>タイトル 必須</td>
+                    <td><input type="text" name="title" /></td>
+                </tr>
+                <tr>
+                    <td>お問い合せ内容 必須</td>
+                    <td><textarea name="text"> </textarea></td>
+                </tr>
+            </table>
+            <div>
+                <input type="submit" value="入力内容を確認する" />
+            </div>
+        </form>
+    </body>
+</html>
